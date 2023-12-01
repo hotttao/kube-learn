@@ -1,0 +1,12 @@
+apiVersion: batch.tao.domain/v1
+kind: Cronjob
+metadata:
+  labels:
+    app.kubernetes.io/name: cronjob
+    app.kubernetes.io/instance: cronjob-sample
+    app.kubernetes.io/part-of: kube-learn
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kube-learn
+  name: cronjob-sample
+spec:
+  # TODO(user): Add fields here

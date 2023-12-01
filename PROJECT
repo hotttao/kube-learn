@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v3
 projectName: kube-learn
 repo: github.com/hotttao/kube-learn
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: tao.domain
+  group: batch
+  kind: Cronjob
+  path: github.com/hotttao/kube-learn/api/v1
+  version: v1
 version: "3"
